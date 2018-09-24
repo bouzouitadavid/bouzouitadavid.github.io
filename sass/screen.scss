@@ -3,6 +3,8 @@
 @import "compass/reset";
 
 /* fonts */
+/* font-family: 'Josefin Sans', sans-serif;
+*/
 
 /* variable color */
 $blue-one:#FB2B33;
@@ -19,8 +21,10 @@ html {
     display: flex;
 }
 body {
+    box-sizing: border-box;
+    padding: 20px;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     background: url(https://www.toptal.com/designers/subtlepatterns/patterns/ricepaper.png);
@@ -29,9 +33,13 @@ body {
 p {
     word-wrap: break-word;
 }
-
 strong {
     font-weight: 400;
+}
+
+.global {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* social */
@@ -64,7 +72,7 @@ strong {
     margin-left: -172px;
 
 }
-
+/* header */
 header {
     background-color: #fff;
     padding: 20px;
@@ -75,13 +83,13 @@ header div {
     display: flex;
     justify-content: end;
 }
-
+/* header about-me */
 header .about-me {
     border-right: solid 2px $blue-one;
     padding-right: 20px;
     width: auto;
 }
-
+/* header info */
 header .info {
     padding-left: 20px;
     line-height: 20px;
@@ -137,6 +145,10 @@ header blockquote {
 /* header-end */
 /* nav */
 
+.btn-nav {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -149,8 +161,8 @@ nav ul li {
     color: #fff;
     padding: 5px;
     overflow: hidden;
-    opacity: 0.7;
-    
+    border-radius: 5px 0 5px 0;
+    height: 20px;
 }
 
 nav ul li:hover {
@@ -158,14 +170,18 @@ nav ul li:hover {
     flex-direction: row;
     color: #fff;
     cursor: pointer; /* déplacer sur a */
-}
-
-nav ul li:hover {
     transition: all 500ms;
-    transform: translateY(-10%);
+  /*transform: translateY(-10%);*/
     opacity: 1;
+    padding-top: 15px; 
 }
 
+nav ul li.active:hover {
+    cursor: default;
+    margin-top: -5px;
+    padding-top: 10px;
+    margin-left: 0;
+}
 
 nav ul li a::before {
     display: block;
@@ -173,7 +189,8 @@ nav ul li a::before {
 }
 
 nav ul li a {
-    display: block;
+    padding: 6px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -205,6 +222,7 @@ li.active {
     margin-top: -5px;
     padding-top: 10px; 
     margin-left: 0;
+    opacity: 1;
 }
 
 li.active a {
@@ -212,10 +230,16 @@ li.active a {
     cursor: unset;
 }
 
+.fa-vcard-o:before, .fa-address-card-o:before { 
+    color: $blue-one;
+}
 /* fin-nav */
+/* footer */
+footer {
+    display: none;
+}
 
 /* animation */
-
 .cls-12 {
     transform: translate(-196px, -305px);
     animation: mymove 2s infinite;
@@ -238,11 +262,9 @@ li.active a {
     to {transform: translate(-190px, -290px);}
 }
 
-
-
 /* TEST */
 
-#demo {
+.btn-more {
     margin-top: -16px;
     border: 0;
     text-align: center;
@@ -253,7 +275,7 @@ li.active a {
     width: 20%;
 }
 
-#demo:hover {
+.btn-more:hover {
     transition: all 500ms;
     transform: scale(1.5);
     background-color: inherit;
