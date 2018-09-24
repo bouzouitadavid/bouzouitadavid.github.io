@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* CSS bouzouita david */
+/* compass */
+/* line 5, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* fonts */
+/* variable color */
+/* general */
+/* line 16, ../sass/screen.scss */
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* line 21, ../sass/screen.scss */
+body {
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/ricepaper.png);
+}
+
+/* line 29, ../sass/screen.scss */
+p {
+  word-wrap: break-word;
+}
+
+/* line 33, ../sass/screen.scss */
+strong {
+  font-weight: 400;
+}
+
+/* social */
+/* line 38, ../sass/screen.scss */
+.social {
+  margin-top: 130px;
+}
+
+/* line 42, ../sass/screen.scss */
+.social ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 46, ../sass/screen.scss */
+.social li {
+  background-color: #FB2B33;
+  color: #fff;
+  flex-direction: row;
+  padding: 5px 5px;
+  margin: 2px;
+}
+
+/* line 55, ../sass/screen.scss */
+.social li:hover {
+  transform: scale(1.5);
+  transition: all 500ms;
+}
+
+/* end-social */
+/* line 61, ../sass/screen.scss */
+.logo {
+  width: 500px;
+  height: 22px;
+  margin-left: -172px;
+}
+
+/* line 68, ../sass/screen.scss */
+header {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px 0;
+}
+
+/* line 74, ../sass/screen.scss */
+header div {
+  display: flex;
+  justify-content: end;
+}
+
+/* line 79, ../sass/screen.scss */
+header .about-me {
+  border-right: solid 2px #FB2B33;
+  padding-right: 20px;
+  width: auto;
+}
+
+/* line 85, ../sass/screen.scss */
+header .info {
+  padding-left: 20px;
+  line-height: 20px;
+  width: auto;
+}
+
+/* line 91, ../sass/screen.scss */
+header .info ul {
+  display: flex;
+  justify-content: safe;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: column;
+}
+
+/* line 99, ../sass/screen.scss */
+header .info ul li {
+  width: 100%;
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+
+/* line 105, ../sass/screen.scss */
+header .info .fa {
+  margin-right: 5px;
+}
+
+/* line 109, ../sass/screen.scss */
+header section {
+  flex-direction: row;
+}
+
+/* line 113, ../sass/screen.scss */
+header h1 {
+  font-size: 2em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* line 120, ../sass/screen.scss */
+header h2 {
+  font-size: 1,5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* line 128, ../sass/screen.scss */
+header p {
+  line-height: 1.2em;
+  text-align: right;
+}
+
+/* line 133, ../sass/screen.scss */
+header blockquote {
+  font-size: 0.9em;
+}
+
+/* header-end */
+/* nav */
+/* line 140, ../sass/screen.scss */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* line 146, ../sass/screen.scss */
+nav ul li {
+  width: 25%;
+  flex-direction: row;
+  color: #fff;
+  padding: 5px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+/* line 156, ../sass/screen.scss */
+nav ul li:hover {
+  width: 25%;
+  flex-direction: row;
+  color: #fff;
+  cursor: pointer;
+  /* déplacer sur a */
+}
+
+/* line 163, ../sass/screen.scss */
+nav ul li:hover {
+  transition: all 500ms;
+  transform: translateY(-10%);
+  opacity: 1;
+}
+
+/* line 170, ../sass/screen.scss */
+nav ul li a::before {
+  display: block;
+  font-size: 1.5em;
+}
+
+/* line 175, ../sass/screen.scss */
+nav ul li a {
+  display: block;
+}
+
+/* line 179, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  color: #fff;
+}
+
+/* line 186, ../sass/screen.scss */
+nav li {
+  background-color: #79231B;
+  color: #FB2B33;
+  margin: 1px;
+}
+
+/* line 192, ../sass/screen.scss */
+nav li:nth-child(2) {
+  background-color: #E3CBBF;
+}
+
+/* line 195, ../sass/screen.scss */
+nav li:nth-child(3) {
+  background-color: #FB2B33;
+}
+
+/* line 198, ../sass/screen.scss */
+nav li:nth-child(4) {
+  background-color: #3A1F17;
+}
+
+/* line 202, ../sass/screen.scss */
+li.active {
+  background-color: #fff;
+  color: #FB2B33;
+  margin-top: -5px;
+  padding-top: 10px;
+  margin-left: 0;
+}
+
+/* line 210, ../sass/screen.scss */
+li.active a {
+  color: #FB2B33;
+  cursor: unset;
+}
+
+/* fin-nav */
+/* animation */
+/* line 219, ../sass/screen.scss */
+.cls-12 {
+  transform: translate(-196px, -305px);
+  animation: mymove 2s infinite;
+  animation-direction: alternate;
+}
+
+/* line 225, ../sass/screen.scss */
+.cls-13 {
+  transform: translate(-195px, -308px);
+  animation: mymove2 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+  from {
+    transform: translate(-182px, -336px);
+  }
+  to {
+    transform: translate(-198px, -311px);
+  }
+}
+@keyframes mymove2 {
+  from {
+    transform: translate(-195px, -308px);
+  }
+  to {
+    transform: translate(-190px, -290px);
+  }
+}
+/* TEST */
+/* line 245, ../sass/screen.scss */
+#demo {
+  margin-top: -16px;
+  border: 0;
+  text-align: center;
+  color: red;
+  border-radius: 5px;
+  font-size: 3em;
+  cursor: pointer;
+  width: 20%;
+}
+
+/* line 256, ../sass/screen.scss */
+#demo:hover {
+  transition: all 500ms;
+  transform: scale(1.5);
+  background-color: inherit;
+}
