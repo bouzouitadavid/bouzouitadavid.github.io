@@ -1,0 +1,290 @@
+/* CSS bouzouita david */
+/* compass */
+@import "compass/reset";
+
+/* fonts */
+/* font-family: 'Josefin Sans', sans-serif;
+*/
+
+// variable font family
+$font-josefin: 'Josefin Sans', sans-serif;
+
+/* variable color */
+$blue-one:#FB2B33;
+$blue-two:#CB0515;
+$blue-tree:#3A1F17;
+$green-one:#E3CBBF;
+$green-two:#79231B;
+
+/* general */
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+body {
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: $font-josefin;
+    font-weight: 300;
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/ricepaper.png);
+}
+
+p {
+    word-wrap: break-word;
+}
+strong {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    color: #fff;
+}
+
+.global {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* / general */
+/* social */
+ 
+.social { 
+    margin-top: 130px;  
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            background-color: $blue-one;
+            color: #fff;
+            flex-direction: row;
+            padding: 5px 5px;
+            margin: 2px; 
+        }
+        li:hover { 
+            transform: scale(1.5);
+            transition: all 500ms;
+        }
+    }
+}
+/* end-social */
+
+.logo {
+    width: 500px;
+    height: 22px;
+    margin-left: -172px;
+
+}
+// header
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px 0; 
+    div {
+        display: flex;
+        justify-content: end;
+    }
+    // header about-me
+    .about-me {
+        border-right: solid 2px $blue-one;
+        padding-right: 20px;
+        width: auto;
+    }
+    // header info
+    .info {
+        padding-left: 20px;
+        line-height: 20px;
+        width: auto;
+        ul {
+            display: flex;
+            justify-content: safe;
+            flex-wrap: wrap;
+            height: 100%;
+            flex-direction: column;
+        }
+        
+        ul li {
+            width: 100%;
+            display: inline-flex;
+            margin-bottom: 5px;
+        }
+        
+        .fa {
+            margin-right: 5px;
+        }
+    }
+    // /header info 
+    section {
+        flex-direction: row;
+    }
+    
+    h1 {
+        font-size: 2em;
+        font-family: $font-josefin;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1,5em;
+        font-family: $font-josefin;
+        font-weight: 600;
+        text-align: right;
+        margin-bottom: 10px; 
+    }
+    
+    p {
+        line-height: 1.2em;
+        text-align: right;
+    }
+    
+    blockquote {
+        font-size: 0.9em;
+    }
+}
+/* / header-end */
+/* nav */
+.btn-nav {
+    font-family: $font-josefin;
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        
+        .fa-vcard-o:before, .fa-address-card-o:before { 
+            color: $blue-one;
+        }
+
+        li {
+            width: (100/4)*1%;
+            flex-direction: row;
+            color: #fff;
+            padding: 5px;
+            overflow: hidden;
+            border-radius: 5px 0 5px 0;
+            height: 20px;
+        }
+        li.fa {
+            color: #fff;
+        }
+
+        li:hover {
+            cursor: pointer; /* déplacer sur a */
+            transition: all 500ms;
+        /*transform: translateY(-10%);*/
+            opacity: 1;
+            padding-top: 15px; 
+        }
+        
+        li.active:hover {
+            cursor: default;
+            margin-top: -5px;
+            padding-top: 10px;
+            margin-left: 0;
+        }
+        
+        li a::before {
+            display: block;
+            font-size: 1.5em;
+        }
+        
+        li a {
+            padding: 6px;
+            font-family: $font-josefin;
+        }
+        li {
+            background-color: $green-two;
+            color: $blue-one;
+            margin: 1px;
+        }
+        
+        li:nth-child(2) {
+            background-color: $green-one;
+        }
+        li:nth-child(3) {
+            background-color: $blue-one;
+        }
+        li:nth-child(4) {
+            background-color: $blue-tree;
+        }
+
+        li.active {
+            background-color: #fff;
+            color: $blue-one;
+            margin-top: -5px;
+            padding-top: 10px; 
+            margin-left: 0;
+            opacity: 1;
+        }
+        
+        li.active a {
+            color: $blue-one;
+            cursor: unset;
+        }
+    }
+}
+/* /nav */
+/* footer */
+footer {
+    display: none;
+}
+
+/* animation */
+.cls-12 {
+    transform: translate(-196px, -305px);
+    animation: mymove 2s infinite;
+    animation-direction: alternate;
+}
+
+.cls-13 {
+    transform: translate(-195px, -308px);
+    animation: mymove2 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {transform: translate(-182px, -336px);}
+    to {transform: translate(-198px, -311px);}
+}
+
+@keyframes mymove2 {
+    from {transform: translate(-195px, -308px);}
+    to {transform: translate(-190px, -290px);}
+}
+
+/* TEST */
+
+.btn-more {
+    margin-top: -16px;
+    border: 0;
+    text-align: center;
+    color: red;
+    border-radius: 5px;
+    font-size: 3em;
+    cursor: pointer;
+    width: 20%;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+        -ms-transform: $property;
+            transform: $property;
+  }
+
+.btn-more:hover {
+    transition: all 500ms;
+    @include transform(scale(1.5));
+    background-color: inherit;
+
+}
+
