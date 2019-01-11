@@ -71,7 +71,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 20px;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -135,7 +135,6 @@ header div {
 
 /* header about-me */
 header .about-me {
-  border-right: solid 2px #FB2B33;
   padding-right: 20px;
   width: auto;
 }
@@ -145,6 +144,7 @@ header .info {
   padding-left: 20px;
   line-height: 20px;
   width: auto;
+  display: none;
 }
 
 header .info ul {
@@ -187,7 +187,7 @@ header h2 {
 
 header p {
   line-height: 1.2em;
-  text-align: right;
+  text-align: justify;
 }
 
 header blockquote {
