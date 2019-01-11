@@ -112,6 +112,9 @@ strong {
 .social li:hover {
   transform: scale(1.5);
   transition: all 500ms;
+  transform-origin: bottom;
+  border: 2px solid white;
+  margin-bottom: -2px;
 }
 
 /* end-social */
