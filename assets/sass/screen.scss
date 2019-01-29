@@ -16,6 +16,11 @@ $blue-tree:#3A1F17;
 $green-one:#E3CBBF;
 $green-two:#79231B;
 
+/* reset firefox */
+button {
+    background-color: white;
+}
+
 /* general */
 
 html {
@@ -264,7 +269,7 @@ footer {
 
 /* TEST */
 
-.btn-more {
+#btn-more {
     margin-top: -16px;
     border: 0;
     text-align: center;
@@ -273,6 +278,7 @@ footer {
     font-size: 3em;
     cursor: pointer;
     width: 20%;
+    background: initial;
 }
 
 @mixin transform($property) {

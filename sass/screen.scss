@@ -26,6 +26,9 @@ html {
     display: flex;
 }
 body {
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     padding: 20px;
     max-width: 700px;
@@ -62,15 +65,13 @@ strong {
     flex-direction: row;
     padding: 5px 5px;
     margin: 2px;
-    
+    transition: all 500ms;
   }
 
   .social li:hover { 
-      transform: scale(1.5);
-      transition: all 500ms;
+      transform: scale(1.4);
       transform-origin: bottom;
-      border: 2px solid white;
-      margin-bottom: -2px;
+      margin: 0 8px;
   }
 /* end-social */
 
@@ -84,7 +85,8 @@ strong {
 header {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px 0; 
+    border-radius: 5px 0;
+    box-shadow: 0px 15px 15px -8px grey;
 }
 
 header div {
@@ -143,9 +145,8 @@ header h2 {
 }
 
 header p {
-    line-height: 1.2em;
-    // text-align: right;
-    text-align: justify;
+    line-height: 1.3em;
+    text-align: center;
 }
 
 header blockquote {
@@ -275,15 +276,16 @@ footer {
 /* TEST */
 
 .btn-more {
-    margin-top: -16px;
+    margin-top: -50px;
     border: 0;
     color: red;
-    font-size: 3em;
+    font-size: 5em;
     cursor: pointer;
     width: 100%;
     text-align: center;
-    border-top: 1px  red; 
+    // border-top: 1px  red; 
     border-style: ridge;
+    background: inherit;
 }
 
 .btn-more i:hover {
