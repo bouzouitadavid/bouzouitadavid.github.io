@@ -64,7 +64,7 @@ strong {
     color: #fff;
     flex-direction: row;
     padding: 5px 5px;
-    margin: 2px;
+    margin: 0 2px;
     transition: all 500ms;
   }
 
@@ -77,8 +77,11 @@ strong {
 
 .logo {
     width: 500px;
-    height: 22px;
+    height: 4px;
     margin-left: -172px;
+    img {
+        height: 400px;
+    }
 
 }
 /* header */
@@ -130,6 +133,7 @@ header section {
 }
 
 header h1 {
+    text-align: center;
     font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
