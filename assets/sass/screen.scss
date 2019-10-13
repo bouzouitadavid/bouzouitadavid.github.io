@@ -327,8 +327,22 @@ footer {
 }
 
 .about-me {
+    .about-titre {
+        font-size: .8rem;
+    }
     &:first-child p {     
     background: white;
-
+    }
+    & > p:first-of-type {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    a {
+        transition: all .4s;
+        color: black;
+        &:hover {
+            opacity: .4;
+            cursor: pointer;
+        }
     }
 }

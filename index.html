@@ -30,23 +30,25 @@
     <header>
         <div>
         <section class="about-me">
-        <h1>Bouzouita David</h1><h2>Web dev "Junior"</h2>
+        <h1>David Bouzouita</h1>
         
-          <p>J'aime le web depuis ma première connexion internet et l'informatique depuis ma naissance, j'utilise la méthode de l'auto-apprentisage, car j'apprends beaucoup plus vite qu'avec l'apprentissage « classic », « scolaire ». <cite>BeCode</cite> a tout compris et n'a pas peur de prendre les devants, c'est une formation innovante dans sa méthodologie d'apprentissage. 
-          Afin de tirer profit de tout le potentielles d'une personne, nous devons adapter les métiers en fonction de la personne et non pas l'inverse.</p><br>
+            <p>Actuellement j'ai été accueilli dans la famille <strong><a href="http://www.webstanz.be" target="_blank">webstanz</a></strong> situé à Mons ou j'ai la chance de pouvoir m'épanouir.</p>
+            <p><strong>About me ?</strong> J'aime le web depuis ma première connexion internet et l'informatique depuis ma naissance, j'utilise la méthode de l'auto-apprentisage, car j'apprends beaucoup plus vite qu'avec l'apprentissage « classic », « scolaire ».
+          <br>Afin de tirer profit de tout le potentielles d'une personne, nous devons adapter les métiers en fonction de la personne et non pas l'inverse.</p><br>
 
           <p class="more-text"></p><br>
          
           
           <button id="btn-more" class="btn-more"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-          <blockquote><strong>Ce site est amené à voir des changements régulièrement</strong></blockquote><br>
+<!--<blockquote><strong>Ce site est amené à voir des changements régulièrement</strong></blockquote><br>-->
+            <h2 class="about-titre">Web dev | full-stack lover addict.. </h2>
         </section><!-- fin about-me -->
 
 <script>
 document.getElementById("btn-more").onclick = function() {myFunction()};
 function myFunction() {
     let btn = document.getElementById("btn-more");
-    document.querySelector(".more-text").innerHTML = 'Actuellement en MAJ chez BeCode j\'ai la chance de pouvoir profiter d\'un partage d\'expérience et de savoir. de la part des formateurs, du groupe et des anciens. Ainsi je me perfectionne et au fur et mesure je me créé des projets personnels afin d\'étoffé mon cv. temp que possible je partagerais mes codes et créations dans la section portfolio ou sur les sites appropriés. Merci de votre intérêt.';
+    document.querySelector(".more-text").innerHTML = "<strong>Hey coucou petite perruche !</strong><br> Comme tu peux le voir le cordonnier est toujours mal chaussé, je n'ai pas beaucoup le temp d'améliorer cette petite v-card mais par contre je suis toujours à l'apprentissage ou la decouverte de nouveau trésor.";
     document.querySelector(".more-text").setAttribute("class", "animation");
     btn.remove();
 }
