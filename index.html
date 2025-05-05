@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,62 +14,72 @@
     <link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
 </head>
+
 <body>
     <div class="global">
-    <figure class="logo"><img src="assets/svg/mrs-ours.svg" alt="Illustration héro-ours"></figure>
+        <figure class="logo"><img src="assets/svg/mrs-ours.svg" alt="Illustration héro-ours"></figure>
         <section class="social">
-                <ul>
-                    <li><a href="https://github.com/bouzouitadavid" target="_blank" rel="noreferrer noopener"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://dribbble.com/davidbouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/davidbouzouita/" target="_blank" rel="noreferrer noopener"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <!-- <li><a href="https://twitter.com/DavidBouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-                    <li><a href="https://www.behance.net/davidbouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                    <!-- <li><a href="https://www.facebook.com/davidbouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> -->
-
-                </ul>   
-            </section><!-- end-social -->
-    <header>
-        <div>
-        <section class="about-me">
-        <h1>David Bouzouita</h1>
-        <p><strong>About me ?</strong> J'aime le web depuis ma première connexion internet et l'informatique depuis ma naissance, j'utilise la méthode de l'auto-apprentisage, car j'apprends beaucoup plus vite qu'avec l'apprentissage « classic », « scolaire ».
-          <br>Afin de tirer profit de tout le potentielles d'une personne, nous devons adapter les métiers en fonction de la personne et non pas l'inverse.</p><br>
-
-          <p class="more-text"></p><br>
-         
-          
-          <button id="btn-more" class="btn-more"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-<!--<blockquote><strong>Ce site est amené à voir des changements régulièrement</strong></blockquote><br>-->
-            <h2 class="about-titre">Web dev | full-stack lover addict.. </h2>
-        </section><!-- fin about-me -->
-
-<script>
-document.getElementById("btn-more").onclick = function() {myFunction()};
-function myFunction() {
-    let btn = document.getElementById("btn-more");
-    document.querySelector(".more-text").innerHTML = "<strong>Hey coucou petite perruche !</strong><br> Comme tu peux le voir le cordonnier est toujours mal chaussé, je n'ai pas beaucoup le temp d'améliorer cette petite v-card mais par contre je suis toujours à l'apprentissage ou la decouverte de nouveau trésor.";
-    document.querySelector(".more-text").setAttribute("class", "animation");
-    btn.remove();
-}
-</script>
-        <section class="info">
             <ul>
-                <li><i class="fa fa-tag" aria-hidden="true"></i> 35ans</li>
-                <li><i class="fa fa-tag" aria-hidden="true"></i> Charleroi</li>
-                <li><i class="fa fa-tag" aria-hidden="true"></i> bientôt.be</li>
+                <li><a href="https://github.com/bouzouitadavid" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://dribbble.com/davidbouzouita" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/davidbouzouita/" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <!-- <li><a href="https://twitter.com/DavidBouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+                <li><a href="https://www.behance.net/davidbouzouita" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-behance" aria-hidden="true"></i></a></li>
+                <!-- <li><a href="https://www.facebook.com/davidbouzouita" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> -->
+
             </ul>
-        </section><!-- fin info -->
-        </div> <!-- fin div section about-me et info -->
-    </header>
-    <nav>
+        </section><!-- end-social -->
+        <header>
+            <div>
+                <section class="about-me">
+                    <h1>David Bouzouita</h1>
+                    <p><strong>About me ?</strong> J'aime le web depuis ma première connexion internet et l'informatique
+                        depuis ma naissance, j'utilise la méthode de l'auto-apprentisage, car j'apprends beaucoup plus
+                        vite qu'avec l'apprentissage « classic », « scolaire ».
+                        <br>Afin de tirer profit de tout le potentielles d'une personne, nous devons adapter les métiers
+                        en fonction de la personne et non pas l'inverse.
+                    </p><br>
+
+                    <p class="more-text"></p><br>
+
+
+                    <button id="btn-more" class="btn-more"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <!--<blockquote><strong>Ce site est amené à voir des changements régulièrement</strong></blockquote><br>-->
+                    <h2 class="about-titre">Web dev | full-stack lover addict.. </h2>
+                </section><!-- fin about-me -->
+
+                <script>
+                    document.getElementById("btn-more").onclick = function () { myFunction() };
+                    function myFunction() {
+                        let btn = document.getElementById("btn-more");
+                        document.querySelector(".more-text").innerHTML = "<strong>Hey coucou petite perruche !</strong><br> Comme tu peux le voir le cordonnier est toujours mal chaussé, je n'ai pas beaucoup le temp d'améliorer cette petite v-card mais par contre je suis toujours à l'apprentissage ou la decouverte de nouveau trésor.";
+                        document.querySelector(".more-text").setAttribute("class", "animation");
+                        btn.remove();
+                    }
+                </script>
+                <section class="info">
+                    <ul>
+                        <li><i class="fa fa-tag" aria-hidden="true"></i> 35ans</li>
+                        <li><i class="fa fa-tag" aria-hidden="true"></i> Charleroi</li>
+                        <li><i class="fa fa-tag" aria-hidden="true"></i> bientôt.be</li>
+                    </ul>
+                </section><!-- fin info -->
+            </div> <!-- fin div section about-me et info -->
+        </header>
+        <nav>
             <ul>
                 <!-- <li class="active fa fa-vcard-o"><a href="#">About me</a></li>
                 <li class="fa fa-pie-chart"><a href="#">Skills</a></li>
                 <li class="fa fa-gears"><a href="#">Portfolio</a></li>
                 <li class="fa fa-envelope-o"><a href="#">Contact</a></li> -->
             </ul>
-    </nav>
-        </div><!-- fin-global -->
+        </nav>
+    </div><!-- fin-global -->
     <footer>Copyright<strong>David Bouzouita</strong></footer>
 </body>
+
 </html>
